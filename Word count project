@@ -1,0 +1,12 @@
+text = input("Enter your words: ")
+text = text.lower()
+
+word = text.split()
+
+count = 0
+for i in text:
+    if i in "aeiou":
+        count += 1
+
+print("Total words:", len(word))
+print("Total vowels:", count)
