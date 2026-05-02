@@ -1,0 +1,29 @@
+Student = {
+    "name": "M Gangaraju Reddy",
+    "marks": {
+        "math": 80,
+        "physics": 70,
+        "chemistry": 90
+    }
+}
+
+total = 0
+
+for mark in Student["marks"].values():
+    total += mark
+
+avg = total / len(Student["marks"])
+
+print("Name:", Student["name"])
+print("Total:", total)
+print("Average:", avg)
+
+if avg >= 80:
+    print("Grade A")
+elif avg >= 60:
+    print("Grade B")
+elif avg >= 50:
+    print("Grade C")
+else:
+    print("Fail")
+
